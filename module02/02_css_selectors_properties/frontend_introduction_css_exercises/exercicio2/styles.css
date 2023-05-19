@@ -1,0 +1,24 @@
+.line {
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.verde {
+    background-color: green;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.vermelho {
+    background-color: red;
+}

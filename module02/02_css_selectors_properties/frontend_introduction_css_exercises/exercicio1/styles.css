@@ -1,0 +1,39 @@
+.h1-centralizado {
+    text-align: center;
+}
+
+.h1-esquerda {
+    text-align: left;
+}
+
+.h1-direita {
+    text-align: right;
+}
+
+.h2-sublinhado {
+    text-decoration: underline;
+}
+
+.h2-azul {
+    color: blue;
+}
+
+.h2-verde {
+    color: green;
+}
+
+.h2-amarelo {
+    color: yellow;
+}
+
+.text1-justify {
+    text-align: justify;
+}
+
+.text2-uppercase {5px
+    text-transform: uppercase;
+}
+
+.h1-shadow {
+    text-shadow: 2px 2px red;
+}
