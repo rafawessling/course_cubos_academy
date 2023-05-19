@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.card-movie {
+    background-image: url('capa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 230px;
+    padding-top: 10px;
+    margin: 10px;
+}
+.card-movie img {
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+.card-movie h2,
+h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 1.5px 1.5px 1px goldenrod;
+}
+
+h3 {
+    margin-top: 90px;
+    height: 30px;
+    background-color: #000000;
+}

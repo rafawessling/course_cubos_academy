@@ -1,0 +1,26 @@
+div span {
+    color: blue;
+    font-weight: bold;
+}
+
+.segunda-div span {
+    color: lightskyblue;
+}
+
+ul + li {
+    background-color: lightgray;
+}
+
+div + div {
+    background-color: beige;
+}
+
+p ~ span {
+    text-decoration: underline;
+    font-size: 18px;
+    color: coral;
+}
+
+ul > li {
+    background-color: burlywood;
+}

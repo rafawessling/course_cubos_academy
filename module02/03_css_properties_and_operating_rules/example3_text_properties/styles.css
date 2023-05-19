@@ -1,0 +1,30 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;*/
+
+.center {
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left {
+    text-align: left;
+    text-decoration: line-through;
+    background-color: orange;
+    color: white;
+}
+
+.right {
+    text-align: right;
+    text-decoration: overline;
+}
+
+p {
+    font-size: 26px;
+    font-weight: 600px;
+    color: blue;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+}
