@@ -1,0 +1,19 @@
+div {
+    background-color: purple;
+    color: white;
+    margin: 5px;
+}
+
+a {
+    background-color: lightcyan;
+    margin: :5px;
+}
+
+p {
+    color: darkblue;
+}
+
+p span, strong {
+    background-color: darkblue;
+    color:white;
+}
