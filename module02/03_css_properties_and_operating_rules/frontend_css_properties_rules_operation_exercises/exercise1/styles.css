@@ -1,0 +1,15 @@
+img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    padding: 8px;
+}
+
+img:hover {
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
