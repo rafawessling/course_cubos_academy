@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+.icones {
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: lightgray;
+}
+
+#imagem-perfil {
+    border-radius: 50%;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+p {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.icone {
+    width: 40px;
+    display: inline-block;
+}
