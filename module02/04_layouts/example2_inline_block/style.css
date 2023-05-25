@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+strong,
+span {
+    display: inline-block;
+    background-color: magenta;
+    margin: 10px;
+}
