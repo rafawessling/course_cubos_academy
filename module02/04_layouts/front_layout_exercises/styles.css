@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(141, 20, 141);
+
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    padding-top: 8px;
+}
+
+header img {
+    width: 300px;
+}
+
+.part1 {
+    margin-top: 70px;
+    background-image: url(assets/girafa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.question {
+    height: 100px;
+    margin-top: -100px;
+    padding: 30px;
+    background-color: hsla(0, 0%, 24%, 0.7);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.voltar-topo {
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+}
+
+.menu {
+    position: fixed;
+    left: -55px;
+    top: 250px;
+    width: 80px;
+    height: 300px;
+    background-color: rgb(238, 119, 119);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.menu:hover {
+    left: 0;
+}
+
+.menu img {
+    display: block;
+    width: 50px;
+    margin: 38px 15px;
+}
+
+.content {
+    font-size: 24px;
+    padding: 50px 100px;
+    text-align: justify;
+}
