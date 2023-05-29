@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100px;
+    width: 450px;
+    background-color: purple;
+
+    margin-top: 50px;
+    margin-left: 30px;
+
+    display: flex;
+}
+
+.item {
+    background-color: orange;
+    width: 100px;
+    height: 70px;
+    border-radius: 7px;
+    border: 2px solid lightgray;
+    font-size: 22px;
+
+    display: flex;
+}
