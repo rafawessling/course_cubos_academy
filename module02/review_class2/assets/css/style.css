@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Mulish', sans-serif;
+
+    --cor-principal: #5eb647;
+    --cor-secundaria: #ffffff;
+}
+
+.container {
+    width: 1120px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 30px 0 30px 0;
+}
+
+.logo {
+    height: 72px;
+}
+
+.navbar-container {
+    display: flex;
+
+    gap: 70px;
+    list-style: none;
+}
+
+.navbar-link {
+    list-style: none;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: var(--cor-principal);
+}
+
+.ad-container {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100vw;
+    padding: 30px 0 30px 0;
+    gap: 20px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    background-color: var(--cor-principal);
+}
+
+.ad-container p {
+    color: var(--cor-secundaria);
+}
+
+.ad-container a {
+    text-decoration: none;
+
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 630px;
+}
+
+.headline img {
+    max-width: 438px;
+}
+
+.headline-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 550px;
+    gap: 40px;
+
+    font-size: 59px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.headline-text span {
+    color: var(--cor-principal);
+}
+
+.headline-text button {
+    width: 400px;
+    padding: 24px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 35px;
+    font-weight: 700;
+
+    background-color: #6cd052;
+    color: var(--cor-secundaria);
+}
+
+.headline-text button:hover {
+    cursor: pointer
+    background-color: hsla(108, 57%, 57%, 80%);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 520px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text h2 {
+    margin-bottom: 40px;
+
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 24px;
+}
+
+.about img {
+    max-width: 474px;
+}
+
+.best-sellers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 520px;
+}
+
+.best-sellers h2 {
+    padding-bottom: 30px;
+
+    font-size: 55px;
+    text-align: center;
+}
+
+.best-sellers-container {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    list-style: none;
+}
+
+.best-seller-link img {
+    width: 250px;
+}
+
+.best-seller-link img:hover {
+    opacity: 60%;
+}
+
+.best-seller-link span {
+    font-size: 23px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+
+    width: 1120px;
+    margin-top: 50px;
+    border: 5px solid var(--cor-principal);
+}
+
+.navbar-contacts {
+    display: flex;
+    align-items: center;
+
+    width: 600px;
+    margin: 40px 0 13px 55px;
+    gap: 120px;
+
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.navbar-contacts nav {
+    display: flex;
+    flex-direction: row;
+
+    z-index: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 55px;
+    list-style: none;
+
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.input-space {
+    all: unset;
+    width: 593px;
+    padding-left: 10px;
+    margin: 17px 0;
+    border-radius: 10px;
+
+    font-size: 24px;
+
+    background-color: #d9d9d9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-nome,
+.input-email {
+    height: 58px;
+}
+
+.input-message {
+    height: 218px;
+    margin-bottom: 25px;
+}
+
+.contact-container button {
+    width: 177px;
+    height: 59px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 35px;
+    font-weight: 700;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.contact-container button:hover {
+    background-color: hsla(108, 44%, 50%, 80%);
+    cursor: pointer;
+}
+
+.plant-footer {
+    height: 846px;
+    margin-left: -100px;
+}
+
+footer {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 66px;
+    margin-top: 80px;
+    padding: 15px 0 15px 0;
+    
+    font-size: 28px;
+    font-weight: 700;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
