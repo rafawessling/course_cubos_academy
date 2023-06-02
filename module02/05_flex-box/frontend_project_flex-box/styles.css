@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 248px;
+    height: 900px;
+
+    background-color: #253a5c;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-top: 32px;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.line {
+    width: 216px;
+    margin-top: 50px;
+
+    border-color: #969090;
+}
+
+.button-sair {
+    width: 216px;
+    height: 64px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    background-color: #41af1a;
+    color: #ffffff;
+}
+
+.button-sair:hover {
+    cursor: pointer;
+
+    background-color: hsla(104, 74%, 39%, 0.6);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1192px;
+    height: 900px;
+
+    background-color: #456392;
+}
+
+.title {
+    margin: 32px 0 52px 0;
+
+    font-weight: 700;
+    font-size: 44px;
+
+    color: #ffffff;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    width: 955.16px;
+    height: 714px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 231.29px;
+    height: 352px;
+
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.list:hover {
+    cursor: pointer;
+}
+
+.image-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 108.75px;
+    height: 121.91px;
+    margin-top: 19.75px;
+    border-radius: 50%;
+
+    background-color: #ecf3fc;
+}
+
+.image-profile img {
+    width: 94.14px;
+    height: 105.53px;
+    border-radius: 50%;
+}
+
+.image-profile img:hover {
+    opacity: 0.6;
+}
+
+.nome {
+    margin-top: 25px;
+
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #131e30;
+}
+
+.user {
+    margin-top: 7px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #131e30;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 59px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #000000;
+}
