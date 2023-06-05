@@ -1,0 +1,49 @@
+ul {
+    display: flex;
+
+    gap: 10px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 32px;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.card-cat img {
+    height: 220px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.card-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    color: white;
+    background-color: orange;
+}
+
+.card-cat:hover {
+    opacity: 0.89;
+}

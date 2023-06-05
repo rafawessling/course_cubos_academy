@@ -122,7 +122,7 @@ header {
 }
 
 .headline-text button:hover {
-    cursor: pointer
+    cursor: pointer;
     background-color: hsla(108, 57%, 57%, 80%);
 }
 
@@ -285,7 +285,7 @@ footer {
     height: 66px;
     margin-top: 80px;
     padding: 15px 0 15px 0;
-    
+
     font-size: 28px;
     font-weight: 700;
 
