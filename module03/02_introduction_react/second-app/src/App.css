@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+header,
+footer {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 52px;
+}
+
+header h2 {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu li {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    gap: 40px;
+
+    height: calc(100vh - 188px);
+    padding: 40px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid gainsboro;
+    padding-right: 20px;
+}
+
+.left strong {
+    margin: 10px 0;
+}
+
+.left span {
+    text-align: justify;
+}
+
+.left img {
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    border-radius: 50%;
+
+    background-color: magenta;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.post a {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 96px;
+}
