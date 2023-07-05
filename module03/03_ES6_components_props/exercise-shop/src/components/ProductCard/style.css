@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+    height: 400px;
+    padding: 16px;
+
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card img {
+    height: 120px;
+    width: 120px;
+    margin-top: 50px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.card button {
+    padding: 10px;
+    margin-top: 16px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    background-color: #333;
+    color: #ffffff;
+}
+
+.card button:hover {
+    background-color: #444;
+}

@@ -1,0 +1,12 @@
+nav ul {
+    display: flex;
+    gap: 20px;
+
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: #ffffff;
+}
