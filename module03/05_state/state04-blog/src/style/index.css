@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('./buttons.css');
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}

@@ -1,0 +1,52 @@
+.backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    background-color: #00000047;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    height: 500px;
+
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.modal h2 {
+    margin-bottom: 16px;
+}
+
+.modal > input {
+    height: 35px;
+}
+
+.modal > input,
+textarea {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 8px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+}
+
+.modal button {
+    width: 150px;
+}
+
+.modal button:first-of-type {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
