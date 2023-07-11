@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" placeholder="Nome da tarefa" id="input-task" />
+
+        <ul></ul>
+    </body>
+
+    <script>
+        const input = document.querySelector('#input-task');
+        const ul = document.querySelector('ul');
+
+        input.addEventListener('keydown', event => {
+            if (event.key !== 'Enter') {
+                return;
+            }
+
+            const li = document.createElement('li');
+
+            li.appendChild(document.createTextNode(input.value));
+            ul.appendChild(li);
+
+            input.value = '';
+        });
+    </script>
+</html>
