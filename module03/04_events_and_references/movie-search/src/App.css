@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding: 32px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.container button,
+input {
+    height: 48px;
+    padding: 0 16px;
+}
+
+.container button {
+    cursor: pointer;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 300px;
+    text-align: left;
+
+    list-style: none;
+}
+
+.container ul li {
+    border-bottom: 1px solid lightgray;
+}
