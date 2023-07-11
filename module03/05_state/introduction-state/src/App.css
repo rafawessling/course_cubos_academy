@@ -1,0 +1,21 @@
+.App {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid gray;
+}
+
+button {
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
