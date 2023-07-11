@@ -1,0 +1,17 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
