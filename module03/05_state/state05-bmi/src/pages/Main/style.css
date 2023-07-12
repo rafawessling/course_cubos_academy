@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+}
+
+.container-calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 400px;
+    height: 500px;
+
+    background-color: lightgray;
+}
+
+.container-calc h1 {
+    margin-bottom: 100px;
+}
+
+.container-calc div input {
+    height: 30px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+.container-calc button {
+    width: 80px;
+    height: 30px;
+    margin: 20px;
+}
+
+.container-calc > p {
+    margin: 3px 0px;
+}
