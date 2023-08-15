@@ -1,4 +1,5 @@
-.container-price {
+.container-price,
+.container-installments {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -20,13 +21,6 @@
     font-weight: 700;
 
     color: #000;
-}
-
-.container-installments {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
 }
 
 .installments {

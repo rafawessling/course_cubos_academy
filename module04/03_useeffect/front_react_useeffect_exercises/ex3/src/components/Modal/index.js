@@ -1,4 +1,4 @@
-import '../../styles/products.css';
+import '../../styles/custom-classes.css';
 import './style.css';
 import { useState, useEffect } from 'react';
 import closeIcon from '../../assets/close-icon.svg';

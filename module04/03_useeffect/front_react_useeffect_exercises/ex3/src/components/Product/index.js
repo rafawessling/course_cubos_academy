@@ -1,4 +1,4 @@
-import '../../styles/products.css';
+import '../../styles/custom-classes.css';
 import './style.css';
 
 const Product = ({ product, handleShowProduct }) => {
