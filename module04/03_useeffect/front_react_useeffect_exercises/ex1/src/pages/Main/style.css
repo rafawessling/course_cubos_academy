@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.close {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-open {
+    width: 80px;
+    height: 30px;
+    margin-top: 30px;
+
+    font-size: 18px;
+}
