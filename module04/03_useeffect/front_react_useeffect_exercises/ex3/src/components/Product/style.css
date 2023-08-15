@@ -1,0 +1,30 @@
+.container-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: calc(33.33% - 60px);
+
+    width: 322px;
+    height: 430px;
+    margin-top: 150px;
+
+    cursor: pointer;
+}
+
+.container-product:hover {
+    transform: scale(1.1);
+}
+
+.container-product img {
+    width: 100%;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #000;
+}
