@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    min-height: 100vh;
+    width: 100vw;
+}
+
+hr {
+    width: 100vw;
+}
+
+.container-new-task {
+    display: flex;
+    gap: 32px;
+    width: 600px;
+}
+
+.container-new-task button {
+    background-color: #e5007b;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    width: 100vw;
+    padding: 0 64px;
+}
+
+.container-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 240px;
+    width: 200px;
+    padding: 16px;
+
+    border: 1px solid lightgray;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    text-align: justify;
+
+    background-color: #313131;
+
+    color: white;
+    text-decoration: none;
+}
+
+.container-task:hover {
+    transform: scale(1.05);
+}
+
+.container-task hr {
+    width: 100%;
+}
+
+.container-task div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.container-task p {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
