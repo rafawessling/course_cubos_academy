@@ -2,7 +2,7 @@ import produtos from '../bancodedados/produtos.js';
 import { getStateFromZipcode } from 'utils-playground';
 
 const getProdutos = async (req, res) => {
-    return res.send(produtos);
+    return res.json(produtos);
 };
 
 const getProdutoById = async (req, res) => {
@@ -12,7 +12,11 @@ const getProdutoById = async (req, res) => {
         return produto.id === Number(idProduto);
     });
 
-    return res.send(produtoEncontrado);
+    if (!produtoEncontrado) {
+        return res.status(404).json({ message: 'Produto não encontrado.' });
+    }
+
+    return res.json(produtoEncontrado);
 };
 
 const getProdutoFrete = async (req, res) => {
@@ -26,18 +30,20 @@ const getProdutoFrete = async (req, res) => {
         return produto.id === Number(idProduto);
     });
 
-    if (produtoEncontrado) {
-        estado = await getStateFromZipcode(cep);
+    if (!produtoEncontrado) {
+        return res.status(404).json({ message: 'Produto não encontrado.' });
+    }
 
-        frete = produtoEncontrado.valor * 0.12;
+    estado = await getStateFromZipcode(cep);
 
-        if (estados1.includes(estado)) {
-            frete = produtoEncontrado.valor * 0.1;
-        }
+    frete = produtoEncontrado.valor * 0.12;
 
-        if (estados2.includes(estado)) {
-            frete = produtoEncontrado.valor * 0.15;
-        }
+    if (estados1.includes(estado)) {
+        frete = produtoEncontrado.valor * 0.1;
+    }
+
+    if (estados2.includes(estado)) {
+        frete = produtoEncontrado.valor * 0.15;
     }
 
     const result = {
@@ -46,7 +52,7 @@ const getProdutoFrete = async (req, res) => {
         frete,
     };
 
-    res.send(result);
+    res.json(result);
 };
 
 export { getProdutos, getProdutoById, getProdutoFrete };

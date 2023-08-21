@@ -3,7 +3,7 @@ import { listarPokemons, detalharPokemon } from 'utils-playground';
 const getPokemons = async (req, res) => {
     const pokemons = await listarPokemons();
 
-    return res.send(pokemons.results);
+    return res.json(pokemons.results);
 };
 
 const getPokemonById = async (req, res) => {
@@ -24,7 +24,7 @@ const getPokemonById = async (req, res) => {
         species,
     };
 
-    return res.send(result);
+    return res.json(result);
 };
 
 const getPokemonByName = async (req, res) => {
@@ -45,7 +45,7 @@ const getPokemonByName = async (req, res) => {
         species,
     };
 
-    return res.send(result);
+    return res.json(result);
 };
 
 export { getPokemons, getPokemonById, getPokemonByName };
