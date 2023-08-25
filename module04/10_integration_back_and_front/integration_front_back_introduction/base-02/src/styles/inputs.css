@@ -1,0 +1,9 @@
+input {
+  height: 48px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}

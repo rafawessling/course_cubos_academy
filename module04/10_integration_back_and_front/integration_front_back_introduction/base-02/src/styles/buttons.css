@@ -1,0 +1,19 @@
+button {
+  all: unset;
+  height: 48px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-purple {
+  background-color: purple;
+  color: white;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
