@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Rafaela Wessling",
+      "email": "rafaela@email.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Joana da Silva",
+      "email": "joana@email.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "Ana Soares",
+      "email": "ana@email.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "João Soares",
+      "email": "joao@email.com",
+      "password": "123456",
+      "id": 4
+    }
+  ]
+}

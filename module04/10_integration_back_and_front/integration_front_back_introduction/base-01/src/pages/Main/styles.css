@@ -1,0 +1,54 @@
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 500px;
+    width: 500px;
+    border: 1px solid lightgray;
+}
+
+.users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 24px;
+}
+
+.users button {
+    width: 50px;
+    margin-right: 4px;
+}
+
+form input {
+    height: 48px;
+    width: 300px;
+    margin: 16px 0;
+}
+
+form button {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.current-user-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding: 24px;
+}
