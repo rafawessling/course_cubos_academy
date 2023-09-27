@@ -1,0 +1,22 @@
+.container-header {
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    height: 4rem;
+
+    background-color: #434343;
+}
+
+.container-header img {
+    margin: 0 1rem 0 7rem;
+}
+
+.container-header strong {
+    color: #aaa5a5;
+    font-family: 'Salsa', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+}

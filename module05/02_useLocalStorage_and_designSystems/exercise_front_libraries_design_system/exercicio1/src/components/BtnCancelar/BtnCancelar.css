@@ -1,0 +1,12 @@
+.container-footer .btn-cancelar {
+    width: 4.6875rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.025rem;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: #007dff;
+}

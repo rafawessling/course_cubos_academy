@@ -1,0 +1,18 @@
+.container-footer {
+    display: flex;
+    align-items: center;
+
+    width: 78rem;
+    height: 6.5rem;
+
+    border-top: 0.0625rem solid #bfbfbf;
+}
+
+.right-side-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 18.1rem;
+    margin-right: calc((78rem - 25rem - 2 * 18.1rem) / 2);
+}

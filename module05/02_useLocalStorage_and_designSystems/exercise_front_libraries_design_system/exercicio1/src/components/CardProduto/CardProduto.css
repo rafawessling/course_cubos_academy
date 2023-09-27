@@ -1,0 +1,52 @@
+.container-card {
+    width: 14.5rem;
+    height: 27.0625rem;
+}
+
+.container-card:hover {
+    scale: 1.05;
+}
+
+.container-card .nome-produto {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.00938rem;
+
+    color: #575757;
+}
+
+.container-card .desc-produto {
+    margin: 0.62rem 0;
+
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 166%;
+    letter-spacing: 0.025rem;
+
+    color: rgba(34, 34, 34, 0.87);
+}
+
+.produto-quantidade {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto-quantidade .unidades-produto {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 266%;
+    letter-spacing: 0.0625rem;
+    text-transform: uppercase;
+
+    color: rgba(101, 101, 101, 0.87);
+}
+
+.produto-quantidade .preco-produto {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.00456rem;
+
+    color: rgba(0, 0, 0, 0.87);
+}

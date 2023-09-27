@@ -1,0 +1,26 @@
+.container-nome-loja {
+    display: flex;
+    flex-direction: column;
+    gap: 3.66rem;
+
+    width: 80rem;
+}
+
+.container-nome-loja h2,
+.container-nome-loja h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.container-nome-loja h2 {
+    font-size: 3rem;
+    line-height: 116.7%;
+}
+
+.container-nome-loja h3 {
+    font-size: 2.125rem;
+    line-height: 123.5%;
+    letter-spacing: 0.01563rem;
+}

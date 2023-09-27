@@ -1,0 +1,18 @@
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 24.5rem;
+    height: 21rem;
+}
+
+.preco-estoque-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-preco-produto,
+.add-estoque-produto {
+    width: 11.5rem;
+}
