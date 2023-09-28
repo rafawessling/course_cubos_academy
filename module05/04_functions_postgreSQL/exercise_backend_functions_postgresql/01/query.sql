@@ -10,19 +10,32 @@ SELECT SUM(ESTOQUE) AS estoque_blue_black FROM farmacia WHERE categoria = 'blue'
 
 SELECT categoria, SUM(estoque) AS soma_estoque FROM farmacia WHERE categoria IS NOT NULL GROUP BY categoria;
 
-SELECT SUM(estoque) AS estoque_sem_categoria FROM farmacia WHERE categoria IS NULL GROUP BY categoria;
+SELECT SUM(estoque) AS estoque_sem_categoria FROM farmacia WHERE categoria IS NULL;
 
-SELECT COUNT(id) AS medicamentos_sem_categoria FROM farmacia WHERE categoria IS NULL;
-
-SELECT CONCAT(id, ' - ', medicamento, ' (', COALESCE(categoria, 'sem categoria'), ')') AS medicamento_e_categoria FROM farmacia;
+SELECT COUNT(id) AS quantidade_medicamentos_sem_categoria FROM farmacia WHERE categoria IS NULL;
 
 SELECT CONCAT(medicamento, ' (', categoria, ')') AS medicamento_e_categoria FROM farmacia WHERE categoria IS NOT NULL;
 
+SELECT CONCAT(id, ' - ', medicamento, ' (', COALESCE(categoria, 'sem categoria'), ')') AS medicamento_e_categoria FROM farmacia;
+
 SELECT nome, idade, CAST(cadastro as date) AS data_cadastro FROM usuarios WHERE EXTRACT(YEAR FROM CAST(cadastro as date)) = 2020;
 
-SELECT nome, idade, email,  TO_CHAR(AGE(CAST(cadastro AS TIMESTAMP)), '{"years": YY, "months": MM, "days": DD, "hours": HH24, "minutes": MI, "seconds": SS}') AS tempo_cadastro FROM usuarios WHERE idade < 18;
+SELECT nome, idade, email, 
+       JSON_BUILD_OBJECT('years', EXTRACT(YEAR FROM AGE(NOW(), CAST(cadastro as date))),
+                         'months', EXTRACT(MONTH FROM AGE(NOW(), CAST(cadastro as date))),
+                         'days', EXTRACT(DAY FROM AGE(NOW(), CAST(cadastro as date))),
+                         'hours', EXTRACT(HOUR FROM AGE(NOW(), CAST(cadastro as date))),
+                         'minutes', EXTRACT(MINUTE FROM AGE(NOW(), CAST(cadastro as date))),
+                         'seconds', EXTRACT(SECOND FROM AGE(NOW(), CAST(cadastro as date))))
+       AS tempo_cadastro
+FROM usuarios WHERE idade < 18;
 
-SELECT nome, idade, email,  TO_CHAR(AGE(CAST(cadastro AS TIMESTAMP)), '{"years": YY, "months": MM, "days": DD}') AS tempo_cadastro FROM usuarios WHERE idade >= 60;
+SELECT nome, idade, email, 
+       JSON_BUILD_OBJECT('years', EXTRACT(YEAR FROM AGE(NOW(), CAST(cadastro as date))),
+                         'months', EXTRACT(MONTH FROM AGE(NOW(), CAST(cadastro as date))),
+                         'days', EXTRACT(DAY FROM AGE(NOW(), CAST(cadastro as date))))
+       AS tempo_cadastro
+FROM usuarios WHERE idade >= 60;
 
 SELECT categoria, COUNT(id) AS quantidade_medicamentos_por_categoria FROM farmacia WHERE categoria IS NOT NULL GROUP BY categoria;
 
