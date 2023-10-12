@@ -1,0 +1,19 @@
+{
+	"name": "codigo-aula-backend-conexao-nodejs-postgresql",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	},
+	"dependencies": {
+		"express": "^4.18.1",
+		"pg": "^8.7.3"
+	}
+}
