@@ -5,8 +5,6 @@ const cadastrarUsuario = async (req, res) => {
     const { nome, email, senha, telefone } = req.body;
 
     try {
-        console.log(req.body);
-
         const quantidadeUsuarios = await knex('usuarios').where({ email }).first();
 
         if (quantidadeUsuarios) {
