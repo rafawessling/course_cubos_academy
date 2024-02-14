@@ -1,0 +1,90 @@
+_type: export
+__export_format: 4
+__export_date: 2022-05-02T13:08:42.540Z
+__export_source: insomnia.desktop.app:v2021.5.3
+resources:
+  - _id: req_fcb32a28294f4995b0bde1da140c8ea0
+    parentId: wrk_3732c93a804545afbc2c6f25db2f316a
+    modified: 1651496851079
+    created: 1651496841821
+    url: http://localhost:3003/teachers
+    name: Teachers
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1651496841821
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_3732c93a804545afbc2c6f25db2f316a
+    parentId: null
+    modified: 1651496831442
+    created: 1651496831442
+    name: Primeiro Projeto Frontend
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_0b442255c68a44d0bd05ad97b712d807
+    parentId: wrk_3732c93a804545afbc2c6f25db2f316a
+    modified: 1651496892080
+    created: 1651496859979
+    url: http://localhost:3003/login
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email":"daniel.lopes@cubos.academy",
+        	"password":"daniel123"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e25ae27b668b49c080edb04d5fac4822
+    authentication: {}
+    metaSortKey: -1650089422446
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_20d53bf5ca5c1615bb0d70559adf09bed3281058
+    parentId: wrk_3732c93a804545afbc2c6f25db2f316a
+    modified: 1651496831449
+    created: 1651496831449
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1651496831449
+    _type: environment
+  - _id: jar_20d53bf5ca5c1615bb0d70559adf09bed3281058
+    parentId: wrk_3732c93a804545afbc2c6f25db2f316a
+    modified: 1651496831450
+    created: 1651496831450
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_85e18cebedf94c8e92b1d0aac58db9ca
+    parentId: wrk_3732c93a804545afbc2c6f25db2f316a
+    modified: 1651496831446
+    created: 1651496831446
+    fileName: Primeiro Projeto Frontend
+    contents: ""
+    contentType: yaml
+    _type: api_spec

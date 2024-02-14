@@ -1,0 +1,31 @@
+.teacher-card {
+    width: 200px;
+    height: 236px;
+
+    color: white;
+    background-color: #da0175;
+
+    border-radius: 8px;
+    padding: 24px 26px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher-card:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.teacher-card h1 {
+    font-size: 22px;
+    margin-top: 16px;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
